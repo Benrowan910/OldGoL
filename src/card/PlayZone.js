@@ -39,18 +39,14 @@ class PlayZone extends Phaser.GameObjects.Container {
       remove the filter at the end that only allows market cards in.
       Then below in Play Cards, filter using a switch / if statements. Only use the cardqueue for cards that will have an effect later. */
 
-
       this.incards = cardgroup.children.getArray().filter((c) => { return (Phaser.Geom.Intersects.RectangleToRectangle(playBox.getBounds(), c.getBounds())) })
       this.incards.forEach(element => { this.ReadyForPlay(element) })
-
 
     })
 
     DataMaker.game.playzone = this
     scene.add.existing(this)
     Phaser.Display.Bounds.CenterOn(this, x, y)
-    console.log(this.incards)
-
   }
 
   ReadyForPlay (card) {

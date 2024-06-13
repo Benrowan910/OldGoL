@@ -321,31 +321,31 @@ const DataMaker = {
         name: '15 Second Radio Ad',
         turns: 3,
         cost: 25,
-        attendees: r_btwn(25, 50),
+        attendees: r_btwn(5, 10),
         popularity: 5
       }
       const socialMedia = {
         name: 'Social Media Campaign',
         cost: 50,
-        attendees: r_btwn(51, 100),
+        attendees: r_btwn(10, 20),
         popularity: 10
       }
       const youtubeAd = {
         name : 'YouTube Campaign',
         cost: 200,
-        attendees: r_btwn(150, 200),
+        attendees: r_btwn(25, 50),
         popularity: 15
       }
       const billboard = {
         name: 'Billboard Ad',
         cost: 800,
-        attendees: r_btwn(250, 350),
+        attendees: r_btwn(50, 75),
         popularity: 25
       }
       const publicFigure = {
         name: 'Public Figure',
         cost: 1000,
-        attendees: r_btwn(400,500),
+        attendees: r_btwn(75,100),
         popularity: 50
       }
 
